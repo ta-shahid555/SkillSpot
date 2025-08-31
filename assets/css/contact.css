@@ -1,0 +1,276 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff8f1;
+  color: #333;
+}
+
+.container { 
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #333333;
+  font-weight: 400;
+}
+
+.highlight.pink {
+  color: #ff4ea1;
+}
+
+.highlight.orange {
+  color: #ff8c00;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 25px rgba(255, 78, 161, 0.1);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.form-container:hover {
+  transform: translateY(-20px) !important;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form-container label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  border: 2px solid #ff4ea1;
+  box-shadow:  0 0 10px #ff4ea1;
+}
+
+.form-container button {
+  margin-top: 20px;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+/* Main container box */
+.info-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+/* Flex layout for text + image inside */
+.info-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 7%;
+}
+
+/* Left side content (text) */
+.info-text {
+  flex: 1;
+  min-width: 280px;
+}
+.info-text h2{
+  color: #ff4ea1;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.info-text h2 span{
+  color: #ff8c00;
+}
+.info-text h3 {
+  color: #c950d1;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info-text p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.icons a {
+  /* margin-right: 10px; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: medium none;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.icons a i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  font-size: 24px;
+}
+.icons .fb {
+  background: #3B5998 !important;
+}
+.icons .insta {
+  background: #ea4c89;
+}
+.icons .ln {
+  background: #0077B5;
+}
+
+.faq {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.faq a {
+  text-decoration: none;
+  color: #3f8efc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.faq a:hover {
+  text-decoration: underline;
+}
+
+/* Right side image */
+.info-image {
+  max-width: 400px;
+  width: 100%;
+ margin-bottom: 30px;
+}
+
+.info-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-content {
+    flex-direction: column;
+  }
+
+  .info-image {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/* Map Section */
+.map-section {
+  margin-bottom: 40px;
+}
+
+.map-section h2 {
+  color: #ff4ea1;
+  margin-bottom: 10px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Support Box */
+.support-callout {
+  background: #ffe4f0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.support-callout a {
+  color: #ff4ea1;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .form-wrapper {
+    padding: 0 10px;
+  }
+
+  .map-section iframe {
+    height: 250px;
+  }
+}

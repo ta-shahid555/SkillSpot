@@ -1,0 +1,95 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "AI is Transforming the Future",
+      "image": "https://picsum.photos/400/250?random=4",
+      "description": "Artificial Intelligence is reshaping industries from healthcare to finance. In this blog, we explore how AI is driving automation, decision-making, and personalized user experiences.",
+      "category": "Technology",
+      "date": "August 10, 2025",
+      "readTime": "6 min read",
+      "author": {
+        "name": "Deborah Grayson Riege",
+        "title": "Fiverr Top Rated Seller & Coach",
+        "bio": "Deborah helps new freelancers succeed by sharing practical gig setup and marketing strategies.",
+        "image": "assets/images/instructor-6.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Creating Accessible Designs: A Comprehensive Guide",
+      "image": "https://picsum.photos/400/250?random=5",
+      "description": "Learn how to design interfaces that are inclusive and accessible to all users, regardless of ability.",
+      "category": "UI/UX",
+      "date": "May 25, 2023",
+      "readTime": "9 min read",
+      "author": {
+        "name": "Lisa Park",
+        "title": "Senior UI/UX Designer",
+        "bio": "Lisa specializes in creating user-friendly and inclusive digital products.",
+        "image": "https://picsum.photos/40/40?random=105"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Setting Your Freelance Rates: A Data-Driven Approach",
+      "image": "https://picsum.photos/400/250?random=6",
+      "description": "How to determine your worth and set rates that reflect your skills and experience without pricing yourself out.",
+      "category": "Freelancing",
+      "date": "May 20, 2023",
+      "readTime": "5 min read",
+      "author": {
+        "name": "James Carter",
+        "title": "Freelance Business Consultant",
+        "bio": "James guides freelancers on pricing strategies, contracts, and building sustainable freelance careers.",
+        "image": "https://picsum.photos/40/40?random=106"
+      } 
+    },
+    {
+      "id": 4,
+      "title": "The Pomodoro Technique: Does It Really Work?",
+      "image": "https://picsum.photos/400/250?random=7",
+      "description": "We put the famous time management method to the test with real users across different professions.",
+      "category": "Productivity",
+      "date": "May 18, 2023",
+      "readTime": "4 min read",
+      "author": {
+        "name": "Olivia Smith",
+        "title": "Time Management Coach",
+        "bio": "Olivia specializes in productivity strategies, helping professionals and students optimize their work-life balance.",
+        "image": "https://picsum.photos/40/40?random=107"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Email Marketing Strategies That Convert in 2023",
+      "image": "https://picsum.photos/400/250?random=8",
+      "description": "From segmentation to automation, learn the email tactics that are driving results this year.",
+      "category": "Digital Marketing",
+      "date": "May 12, 2023",
+      "readTime": "6 min read",
+      "author": {
+        "name": "Robert Taylor",
+        "title": "Digital Marketing Specialist",
+        "bio": "Robert has over 10 years of experience in digital marketing, helping businesses craft impactful email and content strategies.",
+        "image": "https://picsum.photos/40/40?random=108"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Microinteractions: The Secret to Delightful UX",
+      "image": "https://picsum.photos/400/250?random=9",
+      "description": "Small animations and feedback mechanisms that can significantly enhance user experience.",
+      "category": "UI/UX",
+      "date": "May 8, 2023",
+      "readTime": "7 min read",
+      "author": {
+        "name": "Nina Patel",
+        "title": "UX Designer & Product Consultant",
+        "bio": "Nina specializes in creating intuitive digital experiences with a focus on microinteractions, usability, and accessibility.",
+        "image": "https://picsum.photos/40/40?random=109"
+      }
+    }
+  ]
+}
+

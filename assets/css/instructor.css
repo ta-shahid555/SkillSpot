@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+img, picture {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+/*<--------Hero Section---------->*/
+.hero-section {
+  background: oklch(97.59% 0.0029 264.54deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  height: 600px;
+  object-position: 50% center;
+}
+
+
+.banner-text-container {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: auto; 
+  transform: translateY(-50%);
+  max-width: 22rem;
+  padding: 1rem;
+  text-align: left;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.03rem;
+  color: #ea4c89;
+  padding-bottom: 1.5rem;
+}
+.section-title span {
+  color: #ff8c00;
+}
+.banner-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+}
+.ud-btn {
+  margin-top: 1.6rem;
+  padding: 0.75rem 1.5rem !important;
+  width: 90%;
+  font-weight: 500;
+  justify-content: center;
+
+}
+
+.btn-hover{
+  background-color: #3f8efc;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 10px 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.6s ease;
+  border: unset;
+  text-decoration: none;
+}
+.btn-hover:hover::after{
+  transform: skewX(45deg) scale(1, 1);
+}
+.btn-hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 15%;
+  right: -20%;
+  top: -4%;
+  height: 160%;
+  width: 160%;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: #ff4ea1;
+  transform: skewX(45deg) scale(0, 1);
+  z-index: -1;
+  transition: transform 0.3s ease-out;
+}
+.btn-hover-icon {
+  transition: transform 0.3s ease;
+}
+.btn-hover:hover .btn-hover-icon {
+  transform: translateX(5px); 
+}
+
+
+/* <---------Reasons section---------> */
+
+.reasons-section{
+  padding: 5rem 5%;
+}
+
+.reason-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+.reason-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.reason-icon {
+  width: auto;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.reason-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.reason-card p {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.5;
+}
+
+
+/* <---------Reasons section---------> */
+
+.stats-section {
+  background: linear-gradient(rgba(255, 225, 76, 0.5), rgba(201, 80, 209, 0.5));
+  padding: 4rem 5%;
+}
+
+.stat-item {
+  padding: 0.75rem;
+}
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff4ea1;
+  margin-bottom: 0.5rem;
+}
+.stat-label {
+  font-size: 1rem;
+  color: #333333;
+  margin: 0;
+  font-weight: 600;
+}
+
+
+/* <---------How It Works section---------> */
+
+.how-it-works-section {
+  padding: 5rem 7%;
+}
+
+.how-it-works-section .nav-tabs {
+  border: none;
+  margin-bottom: 2.5rem;
+}
+.how-it-works-section .nav-tabs .nav-link {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.how-it-works-section .nav-tabs .nav-link:hover {
+  color: #3f8efc;
+}
+.how-it-works-section .nav-tabs .nav-link.active {
+  color: #c950d1;
+  border-bottom: 3px solid #c950d1;
+}
+
+.how-it-works-section .tab-pane p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+.how-it-works-section .tab-pane h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: #222;
+}
+.how-it-works img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* <---------Testimonials section---------> */
+
+.instructors-testimonials-section {
+  padding: 5rem 5%;
+  background: linear-gradient(rgba(255, 225, 76, 0.5), rgba(63, 142, 252, 0.5));
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  padding: 50px 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+.carousel-item {
+  max-width: 1000px;    
+  margin: 0 auto;       
+  width: 100%;          
+  text-align: left;     
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.carousel-item p.fst-italic {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #333333;
+}
+.carousel-item h5 {
+  color: #ff4ea1;
+  font-size: 24px;
+}
+.carousel-item .text-muted {
+  font-size: 18px;
+  color: #ff8c00 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2d2f31;
+  border-radius: 50%;
+  padding: 25px;
+  width: 24px;
+  height: 24px;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #ff4ea1;
+}
+
+
+/* <---------Become Instructor section---------> */
+
+.become-instructor-section {
+  padding: 4rem 5%;
+}
+.become-instructor-section p{
+  font-size: 20px;
+  color: #333333;
+  font-weight: 400;
+}
+.become-instructor-section .cta-btn{
+  padding: 0.75rem 1.5rem !important;
+  width: 300px;
+  justify-content: center;
+}
+
+
+
+/* ====== LARGE SCREENS ====== */
+@media (min-width: 1440px)  {
+  .hero-banner-img {
+    object-position: 30% center; 
+  }
+}
+@media (min-width: 992px) and (max-width: 1439px) {
+  .hero-banner-img {
+    object-position: 50% center;
+  }
+}
+
+/* ====== MEDIUM SCREENS ====== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-banner-img {
+    object-position: 60% center;
+  }
+}
+
+/* ====== SMALL SCREENS ====== */
+@media  (max-width: 767px) {
+  .hero-banner-img {
+    height: 400px;
+    object-position: 80% center; 
+  }
+  .banner-text-container {
+    position: static;
+    transform: none;
+    margin: 1.5rem auto;
+    padding: 1rem 1.2rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+  .banner-text {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+  .ud-btn {
+    margin-top: 1.2rem;
+    width: 80%;
+  }
+
+  .how-it-works .row {
+    flex-direction: column-reverse;
+  }
+  .how-it-works .text-center {
+    margin-bottom: 2rem;
+  }
+  .how-it-works .nav-tabs .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+
+
+
+
+
+

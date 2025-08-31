@@ -1,0 +1,157 @@
+{
+  "course": [
+   {
+    "id": "graphic-design",
+    "title": "Graphic Design Basics",
+    "category": "Design",
+    "short_description": "Master visual storytelling using Canva, Photoshop & more. Learn color theory, typography, and layout design.",
+    "image": "assets/images/pexels-pixabay-414974.jpg",
+    "instructor": "Ayesha Khan",
+    "instructorDetails": {
+      "name": "Ayesha Khan",
+      "title": "Creative Director at DesignPro Studio",
+      "bio": "Ayesha has mentored over 500 aspiring designers and brings more than 8 years of industry experience in branding, advertising, and visual design.",
+      "image": "assets/images/instructor-1.jpg"
+    },
+    "description": [
+      "Unlock your creativity and build a strong foundation in graphic design with this beginner-friendly course.",
+      "You'll explore essential principles such as color theory, typography, composition, and branding while working on real design projects.",
+      "Using tools like Canva and Adobe Photoshop, you’ll learn how to create compelling visuals for social media, marketing, and personal portfolios."
+    ]
+  },
+
+    {
+      "id": "web-development",
+      "title": "Web Development Bootcamp",
+      "category": "Tech",
+      "short_description": "Learn HTML, CSS, JavaScript, and build real websites from scratch.",
+      "image": "assets/images/pexels-goumbik-574071.jpg",
+      "instructor": "Paulo Dichone",
+      "instructorDetails": {
+        "name": "Paulo Dichone",
+        "title": "Senior Web Developer at CodeLabs",
+        "bio": "Jane has over 10 years of experience in full-stack development and loves teaching.",
+        "image": "assets/images/instructor-7.webp"
+      },
+      "description": [
+        "Kickstart your journey into the world of web development with this comprehensive bootcamp.",
+        "Learn how to build responsive websites using HTML, CSS, and JavaScript—from the ground up.",
+        "Understand core development principles, work with real projects, and gain hands-on coding experience."
+      ]
+    },
+   {
+      "id": "digital-marketing",
+      "title": "Digital Marketing 101",
+      "category": "Tech",
+      "short_description": "Discover social media, SEO, and email marketing strategies.",
+      "image": "assets/images/pexels-pixabay-267350.jpg",
+      "instructor": "Frank Kane",
+      "instructorDetails": {
+        "name": "Frank Kane",
+        "title": "Digital Marketing Consultant & Trainer",
+        "bio": "Frank has worked with Fortune 500 brands to grow their digital presence. He brings practical insights into every session.",
+        "image": "assets/images/instructor-5.webp"
+      },
+      "description": [
+        "This beginner-friendly course introduces core digital marketing tools and techniques.",
+        "Explore social media strategies, SEO optimization, and impactful email campaigns.",
+        "Learn how to analyze trends and grow your online visibility effectively."
+      ]
+    },
+    {
+      "id": "photography",
+      "title": "Photography Masterclass",
+      "category": "Design",
+      "short_description": "Capture stunning photos and learn editing techniques.",
+      "image": "assets/images/pexels-asphotograpy-212372.jpg",
+      "instructor": "John Smith",
+      "instructorDetails": {
+        "name": "John Smith",
+        "title": "Professional Photographer & Editor",
+        "bio": "John has spent over a decade behind the lens and has taught photography across the globe.",
+        "image": "assets/images/person-4.webp"
+      },
+      "description": [
+        "Learn how to shoot breathtaking images with proper lighting and composition.",
+        "Understand your camera settings and master essential photo editing skills.",
+        "Turn your passion into a professional skill with real-world projects."
+      ]
+    },
+    {
+      "id": "fiverr-freelancing",
+      "title": "Freelancing on Fiverr",
+      "category": "Freelancing",
+      "short_description": "Learn how to set up gigs and get paid online from day one.",
+      "image": "assets/images/pexels-cottonbro-5076517.jpg",
+      "instructor": "Deborah Grayson Riege",
+      "instructorDetails": {
+        "name": "Deborah Grayson Riege",
+        "title": "Fiverr Top Rated Seller & Coach",
+        "bio": "Deborah helps new freelancers succeed by sharing practical gig setup and marketing strategies.",
+        "image": "assets/images/instructor-6.jpg"
+      },
+      "description": [
+        "Get started with Fiverr by creating high-converting gigs in top categories.",
+        "Learn to manage orders, communicate with clients, and build a 5-star rating.",
+        "Start earning from your skills without any prior freelancing experience."
+      ]
+    },
+    {
+      "id": "ui-ux",
+      "title": "UI/UX Fundamentals",
+      "category": "Design",
+      "short_description": "Understand user flow, wireframes, and UI basics.",
+      "image": "assets/images/pexels-ravikant-4531875.jpg",
+      "instructor": "Sara Malik",
+      "instructorDetails": {
+        "name": "Sara Malik",
+        "title": "UX Designer at Creatix Studio",
+        "bio": "Sara has worked on award-winning UX projects and mentors aspiring designers worldwide.",
+        "image": "assets/images/instructor-2.jpg"
+      },
+      "description": [
+        "Dive into the world of user experience and intuitive interface design.",
+        "Understand wireframes, usability principles, and the tools UX designers use daily.",
+        "Ideal for beginners looking to start a UI/UX design career."
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Python for Beginners",
+      "category": "Tech",
+      "short_description": "Start coding with Python — learn logic, loops, and build real applications.",
+      "image": "assets/images/pexels-kevin-ku-92347-577585.jpg",
+      "instructor": "Kamal Abraham",
+      "instructorDetails": {
+        "name": "Kamal Abraham",
+        "title": "Software Engineer & Python Enthusiast",
+        "bio": "Kamal loves simplifying programming concepts and making Python fun for all learners.",
+        "image": "assets/images/instructor-4.jpg"
+      },
+      "description": [
+        "Learn Python programming from scratch with real-world coding examples.",
+        "Understand loops, functions, and conditional logic through hands-on practice.",
+        "Build mini projects to reinforce your understanding and logic-building skills."
+      ]
+    },
+    {
+      "id": "freelance-career",
+      "title": "Start a Freelancing Career",
+      "category": "Freelancing",
+      "short_description": "Build your freelance brand on Upwork, LinkedIn, and attract clients.",
+      "image": "assets/images/pexels-rdne-5921786.jpg",
+      "instructor": "Zain Ali",
+      "instructorDetails": {
+        "name": "Zain Ali",
+        "title": "Freelance Strategist & Career Coach",
+        "bio": "Zain has helped hundreds of students transition to full-time freelance careers with confidence.",
+        "image": "assets/images/instructor-3.jpg"
+      },
+      "description": [
+        "Craft a powerful freelancer profile that gets noticed on top platforms.",
+        "Discover how to pitch, price, and deliver projects professionally.",
+        "Start getting paid for your skills by working with global clients."
+      ]
+    }
+  ]
+}

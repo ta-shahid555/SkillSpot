@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSpot | Student Dashboard</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css"/>
+  <link rel="stylesheet" href="assets/css/header-footer.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+  <!---------Scroll Top--------->
+
+  <div class="circle-container">
+    <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.03516 0.416666L7.03516 15H8.28516L8.28516 0.416666H7.03516Z" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 31.6667; stroke-dashoffset: 31.6667;"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.28516 1.04115C8.28516 3.98115 5.70016 6.38281 2.94349 6.38281H2.31849V5.13281H2.94349C5.03599 5.13281 7.03516 3.26448 7.03516 1.04115V0.416979H8.28516V1.04115Z"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.03333 1.04115C7.03333 3.98115 9.61833 6.38281 12.375 6.38281H13V5.13281H12.375C10.2817 5.13281 8.28333 3.26448 8.28333 1.04115V0.416979H7.03333V1.04115Z"></path>
+      </g>
+    </svg>
+  </div>
+
+  <!---------Header--------->
+  
+  <header class="topbar-navbar-area header">
+
+    <!---------Topbar Area--------->
+
+    <div class="topbar-area">
+      <div class="topbar-wrap">
+        <h5>Learner Appreciation Sale <span>| Get learning that lasts.Courses as low as $9.99.</span> </h5>
+      </div>
+    </div>
+
+    <!---------Navbar Area--------->
+
+    <nav class="navbar navbar-area navbar-expand-lg d-flex flex-nowrap align-items-center justify-content-between">
+      <div class="nav-left">
+        <div class="company-logo">
+          <a href="index.html"><img src="assets/images/logo.png"></a>
+        </div>
+
+        <div class="main-menu collapse navbar-collapse" id="navbarNav">
+          <div class="company-logo .mobile-logo d-lg-none">
+            <a href="index.html"><img src="assets/images/logo.png"></a>
+          </div>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="explore-skills.html" class="dropdown-item">All</a></li>
+                <li><a href="explore-skills.html" class="dropdown-item">Design</a></li>
+                <li><a href="explore-skills.html" class="dropdown-item">Tech</a></li>
+                <li><a href="explore-skills.html" class="dropdown-item">Freelancing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="learner.html" class="nav-link">Join as Learner</a>
+            </li>
+            <li class="nav-item">
+              <a href="instructor.html" class="nav-link">Teach with us</a>
+            </li>
+          </ul>  
+
+          <form class="d-lg-none d-flex">
+            <div class="form-inner search-form">
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="text" placeholder="Search your product...">
+            </div>
+          </form>
+    
+          <button class="d-lg-none d-flex cart-btn btn-hover">
+            <a href="cart.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              Add to Cart
+            </a>
+          </button>
+
+          <button class="d-lg-none d-flex dashboard btn-hover">
+            <a href="dashboard.html">
+              <svg width="15" height="19" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.8751 4.17663C11.875 5.00255 11.6183 5.8099 11.1375 6.49658C10.6567 7.18326 9.97335 7.71843 9.17389 8.03442C8.37443 8.35041 7.49475 8.43303 6.6461 8.27184C5.79744 8.11064 5.01792 7.71286 4.40611 7.12881C3.79429 6.54475 3.37766 5.80064 3.20889 4.99058C3.04012 4.18052 3.1268 3.34088 3.45796 2.57783C3.78912 1.81479 4.34989 1.16261 5.06937 0.703757C5.78884 0.244909 6.6347 7.28125e-09 7.5 0C8.07459 3.64089e-05 8.64354 0.108097 9.17438 0.318012C9.70521 0.527927 10.1875 0.835585 10.5938 1.22342C11.0001 1.61126 11.3223 2.07167 11.5422 2.57839C11.762 3.0851 11.8752 3.62818 11.8751 4.17663ZM7.5 9.58844C6.26105 9.58705 5.0354 9.83216 3.90124 10.3082C2.76708 10.7842 1.74932 11.4806 0.912902 12.353C-0.563582 13.8885 -0.20194 16.3311 1.6571 17.4243C3.41487 18.4546 5.43728 19 7.5 19C9.56272 19 11.5851 18.4546 13.3429 17.4243C15.2019 16.3311 15.5636 13.8885 14.0871 12.353C13.2507 11.4806 12.2329 10.7842 11.0988 10.3082C9.9646 9.83216 8.73895 9.58705 7.5 9.58844Z"></path>
+              </svg>
+              My Skill Board
+            </a>
+          </button> 
+        </div>
+      </div>
+
+      <div class="nav-right d-flex justify-content-end align-items-center">
+        <form class="d-lg-flex d-none search-form-focus">
+          <div class="form-inner search-form">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" placeholder="Search your product...">
+          </div>
+        </form>
+        
+        <a href="cart.html" class="cart d-lg-flex d-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+        </a>
+                                
+        <button class="login-btn btn-hover d-lg-flex d-none">
+          <a href="log-in.html">
+            Log in
+          </a>
+        </button>
+
+        <button class="dashboard btn-hover d-lg-flex d-none rounded-circle" height="50px" width="50px">
+          <a href="dashboard.html">
+            <svg width="15" height="19" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8751 4.17663C11.875 5.00255 11.6183 5.8099 11.1375 6.49658C10.6567 7.18326 9.97335 7.71843 9.17389 8.03442C8.37443 8.35041 7.49475 8.43303 6.6461 8.27184C5.79744 8.11064 5.01792 7.71286 4.40611 7.12881C3.79429 6.54475 3.37766 5.80064 3.20889 4.99058C3.04012 4.18052 3.1268 3.34088 3.45796 2.57783C3.78912 1.81479 4.34989 1.16261 5.06937 0.703757C5.78884 0.244909 6.6347 7.28125e-09 7.5 0C8.07459 3.64089e-05 8.64354 0.108097 9.17438 0.318012C9.70521 0.527927 10.1875 0.835585 10.5938 1.22342C11.0001 1.61126 11.3223 2.07167 11.5422 2.57839C11.762 3.0851 11.8752 3.62818 11.8751 4.17663ZM7.5 9.58844C6.26105 9.58705 5.0354 9.83216 3.90124 10.3082C2.76708 10.7842 1.74932 11.4806 0.912902 12.353C-0.563582 13.8885 -0.20194 16.3311 1.6571 17.4243C3.41487 18.4546 5.43728 19 7.5 19C9.56272 19 11.5851 18.4546 13.3429 17.4243C15.2019 16.3311 15.5636 13.8885 14.0871 12.353C13.2507 11.4806 12.2329 10.7842 11.0988 10.3082C9.9646 9.83216 8.73895 9.58705 7.5 9.58844Z"></path>
+            </svg>
+          </a>
+        </button>
+
+        <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
+            <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-------Content----->
+  <section class="dashboard-content d-flex">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">SkillSpot</div>
+
+      <!-- Navigation -->
+      <ul class="nav-links">
+        <li class="active">🏠 Overview</li>
+        <li>📅 Schedule</li>
+        <li>📚 My Courses</li>
+        <li>💡 E-Learning</li>
+        <li>📊 Analytics</li>
+        <li>🔔 Notifications</li>
+      </ul>
+
+      <!-- Bottom Section -->
+      <div class="bottom-links">
+        <!-- Profile -->
+        <div class="profile">
+          <img src="assets/images/image.png" alt="profile">
+          <div class="prfl-info">
+            <h4>sarah</h4>
+            <p>Student</p>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-box">
+          <p>Daily Goal</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%;"></div>
+          </div>
+          <small>70% Completed</small>
+        </div>
+
+        <button class="upgrade">Upgrade PRO</button>
+        <p class="settings">⚙️ Settings</p>
+        <p class="logout">🚪 Log Out</p>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+      <!-- Heading Section -->
+      <section class="hero">
+        <h1><span class="pink">Learn Skills</span> & <span class="orange">Share Knowledge</span></h1>
+        <p>
+          Boost your career by learning new skills from experts. 
+          Explore top-rated courses and track your progress easily.
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Find a course..." />
+          <button>Search</button>
+        </div>
+      </section>
+
+      <!-- Top Cards -->
+      <section class="top-cards">
+        <div class="card small">
+          <h4>100 hrs</h4>
+          <p>Digital Marketing</p>
+        </div>
+        <div class="card small">
+          <h4>120 hrs</h4>
+          <p>UI/UX Design</p>
+        </div>
+        <div class="card small">
+          <h4>104 hrs</h4>
+          <p>Sales & BD</p>
+        </div>
+        <!-- Extra New Card -->
+        <div class="card small special">
+          <h4>🔥 New</h4>
+          <p>Upcoming Classes</p>
+        </div>
+      </section>
+
+      <!-- Charts -->
+      <section class="charts">
+        <div class="card large">
+          <h3>Hours Spent</h3>
+          <canvas id="hoursChart"></canvas>
+        </div>
+        <div class="card large">
+          <h3>Progress</h3>
+          <canvas id="progressChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Assignments -->
+      <section class="assignments card">
+        <h3>My Assignments</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Assignment Name</th>
+              <th>Total Assignment</th>
+              <th>Total Score</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Targeting Audience</td>
+              <td>12/12</td>
+              <td>100/100</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>User Persona Research</td>
+              <td>12/12</td>
+              <td>90/100</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Key Metrics & Strategies</td>
+              <td>4/12</td>
+              <td>40/100</td>
+              <td><span class="status progress">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>User Interface Design</td>
+              <td>3/12</td>
+              <td>25/100</td>
+              <td><span class="status progress">In Progress</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Enrolled Courses -->
+      <section class="enrolled card">
+        <h3>My Enrolled Courses</h3>
+        <div class="course-list">
+          <div class="course-card">
+            <img src="assets/images/digital.png" alt="course">
+            <h4>Digital Marketing</h4>
+            <p>Instructor: John Doe</p>
+            <button>Continue</button>
+          </div>
+          <div class="course-card">
+            <img src="assets/images/web-dev.png" alt="course">
+            <h4>web-development</h4>
+            <p>Instructor: Sarah Lee</p>
+            <button>Continue</button>
+          </div>
+          <div class="course-card">
+            <img src="assets/images/graphic-design.png" alt="course">
+            <h4>Graphic design</h4>
+            <p>Instructor: Mark Smith</p>
+            <button>Continue</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </section>
+
+  <!--------Footer------->
+
+  <footer class="footer">
+    <img src="assets/images/pink-line.png" class="w-100 pink-line" alt="Image Not Found">
+
+    <div class="footer-top">
+      <div class="social-links">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+                    
+          <div class="col-lg-4 col-md-6 footer-item">
+            <div class="f-item about">
+              <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Image Not Found">
+              </div>
+              <p>
+                Discover a world of opportunities through learning where every skill mastered opens the door to something greater.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-item">
+            <div class="f-item link">
+              <h4 class="widget-title">About</h4>
+              <ul>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="explore-skills.html">Courses</a>
+                </li>
+                <li>
+                  <a href="blogs.html">News &amp; Blogs</a>
+                </li>
+                <li>
+                  <a href="instructor.html">Become a Teacher</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-item">
+            <div class="f-item link">
+              <h4 class="widget-title">Quick Link</h4>
+              <ul>
+                <li>
+                  <a href="contact-us.html">Live Workshop</a>
+                </li>
+                <li>
+                  <a href="explore-skills.html">Free Courses</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Addmition</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Request a Demo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-item">
+            <div class="f-item newsletter">
+              <h4 class="widget-title">Join Our Newsletter</h4>
+              <p>
+                Join our subscribers list to get the latest <br> news and special offers.
+              </p>
+              <form action="#">
+                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                <button type="submit" class="btn-hover">Subscribe</button>  
+              </form>
+              <fieldset>
+                <input type="checkbox" id="privacy" name="privacy">
+                <label for="privacy">I agree to the Privacy Policy</label>
+              </fieldset>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-lg-6">
+          <p>© Copyright 2025. All Rights Reserved by <a href="index.html">SkillSpot</a></p>
+        </div>
+        <div class="col-lg-6">
+          <a href="contact-us.html" class="contact-&-Support">Contact & Support</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/header-footer.js"></script>
+</body>
+</html>
