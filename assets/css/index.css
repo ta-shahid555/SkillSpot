@@ -958,6 +958,24 @@ i::before {
   .enrollment-section .enroll-card{
     width: 90%;
   }
+
+
+  .about-section-images {
+    height: auto;
+  }
+  .about-img-1 {
+    position: relative;
+    width: 80%;
+    height: auto;
+  }
+  .about-img-2 {
+    position: relative;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 12/10;
+    top: -15%;
+    left: 50%;
+  }
 }
 
 @media (max-width: 576px) {
